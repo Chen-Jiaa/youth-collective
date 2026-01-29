@@ -1,0 +1,221 @@
+"use client";
+
+import Footer from "@/app/components/Footer";
+import Navbar from "@/app/components/Navbar";
+import Image from "next/image";
+
+export default function MissionPage() {
+  return (
+    <main className="w-full min-h-screen font-sans antialiased">
+      <Navbar />
+      {/* Hero Title Section */}
+      <section className="flex flex-col items-center justify-center min-h-[50vh] relative overflow-hidden">
+        <div className="flex flex-col items-center justify-center w-full h-full bg-black">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-black tracking-tight font-heading opacity-20">
+            MISSION
+          </h1>
+        </div>
+      </section>
+
+      {/* Bring A Light - Image Gallery */}
+      <section className="w-full flex flex-row flex-wrap items-center justify-center gap-0 bg-black">
+        <Image
+          src="/assets/29740048_771956939666401_7113885736889221120_n_YO2h9ojN4veKBMib-ABtm.jpg"
+          alt="Bring A Light mission"
+          width={1000}
+          height={562}
+          className="w-full md:w-1/3 h-auto object-cover aspect-video"
+        />
+        <Image
+          src="/assets/Edited30086490_588511634834733_7278561109504688128_n_868Rp-tnQ8GEH-Yofx-Wf.jpg"
+          alt="Bring A Light mission"
+          width={1000}
+          height={562}
+          className="w-full md:w-1/3 h-auto object-cover aspect-video"
+        />
+        <Image
+          src="/assets/Edited30079384_728303054224776_9128337033503178752_n_1Kp8NeGFUfK7kimXdpXNq.jpg"
+          alt="Bring A Light mission"
+          width={750}
+          height={424}
+          className="w-full md:w-1/3 h-auto object-cover aspect-video"
+        />
+      </section>
+
+      {/* Bring A Light - Content */}
+      <section className="w-full flex flex-col items-center justify-center px-4 py-12 md:px-8 lg:px-16 mt-8 mb-8">
+        <div className="w-full max-w-2xl flex flex-col items-center gap-6 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading">
+            Bring A Light
+          </h2>
+          <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+            {`Light up homes in rural villages with no electricity.
+Location: Pulau Berhala, Sabah
+Date: 3 - 6 August
+Cost: RM 400
+Deadline: 28 May 2023`}
+          </p>
+          <a
+            href="#tally-open=3lrK1V&tally-layout=modal"
+            className="inline-block px-8 py-4 bg-white text-black font-bold text-sm uppercase tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-300"
+          >
+            COUNT ME IN!
+          </a>
+        </div>
+      </section>
+
+      {/* Trip Up North - Image Gallery */}
+      <section className="w-full flex flex-row flex-wrap items-center justify-center gap-0 ">
+        <Image
+          src="/assets/soul_christmas_FYvB67nRJjsZc30xT6ydV.png"
+          alt="Soul Christmas"
+          width={896}
+          height={598}
+          className="w-full md:w-1/2 h-auto object-cover"
+        />
+        <Image
+          src="/assets/soul_kids_MrxZ2wkRWPnHdPUeihMMx.png"
+          alt="Soul Kids"
+          width={1000}
+          height={1003}
+          className="w-full md:w-1/2 h-auto object-cover"
+        />
+      </section>
+
+      {/* Trip Up North - Content */}
+      <section className="w-full flex flex-col items-center justify-center px-4 py-12 md:px-8 lg:px-16 mt-8 mb-8">
+        <div className="w-full max-w-2xl flex flex-col items-center gap-6 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading">
+            Trip Up North
+          </h2>
+          <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+            {`Serving other churches together!
+Location : Ascent & Soul
+Date : 28 June - 1 July
+Cost: RM 200
+Deadline: 21 May 2023`}
+          </p>
+          <a
+            href="#tally-open=3xY41E&tally-layout=modal"
+            className="inline-block px-8 py-4 bg-white text-black font-bold text-sm uppercase tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-300"
+          >
+            COUNT ME IN!
+          </a>
+        </div>
+      </section>
+
+      {/* Refugee School - Image Gallery */}
+      <section className="w-full flex flex-row flex-wrap items-center justify-center gap-0 bg-black">
+        <Image
+          src="/assets/EditedIMG_4235_(1)_ATGoCcqiP4d5xphgkprDm.jpg"
+          alt="Refugee School"
+          width={1500}
+          height={1125}
+          className="w-full md:w-1/3 h-auto object-cover"
+        />
+        <Image
+          src="/assets/EditedIMG_4235_DOl_kwmu3J5cw_eZJNJ3M.jpg"
+          alt="Refugee School"
+          width={750}
+          height={563}
+          className="w-full md:w-1/3 h-auto object-cover"
+        />
+        <Image
+          src="/assets/EditedIMG_4394_tUvpXJPHaCEesErfZWvr-.jpg"
+          alt="Refugee School"
+          width={750}
+          height={563}
+          className="w-full md:w-1/3 h-auto object-cover"
+        />
+      </section>
+
+      {/* Refugee School Title */}
+      <section className="w-full flex flex-col items-center justify-center px-4 py-12 md:px-8 lg:px-16 mt-8 mb-8">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-center">
+          Refugee School
+        </h2>
+      </section>
+
+      {/* Refugee School - Roles Section */}
+      <section className="w-full flex flex-col items-center justify-center px-4 py-8 md:px-8 lg:px-16 mb-8">
+        <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {/* In-class Teacher */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-xl md:text-2xl font-bold  font-heading">
+              In-class Teacher
+            </h3>
+            <p className="text-sm md:text-base leading-relaxed">
+              Commit 1-2 hours a week for a year to teach subjects such as
+              reading &amp; writing.
+            </p>
+          </div>
+
+          {/* Substitute Teacher */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-xl md:text-2xl font-bold  font-heading">
+              Substitute Teacher
+            </h3>
+            <p className="text-sm md:text-base leading-relaxed">
+              Fill-in and teach the lesson plans that have been left by the
+              absent teacher.
+            </p>
+          </div>
+
+          {/* Extra-curriculum */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-xl md:text-2xl font-bold  font-heading">
+              Extra-curriculum
+            </h3>
+            <p className="text-sm md:text-base  leading-relaxed">
+              Commit 1 hour a week for 2-3 months to conduct extra-curricular
+              activities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Serve Now Section */}
+      <section className="w-full flex flex-col items-center justify-center px-4 py-12 md:px-8 lg:px-16 mt-8 mb-8">
+        <div className="w-full max-w-2xl flex flex-col items-center gap-6 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading ">
+            Serve Now
+          </h2>
+          <p className="text-sm md:text-base leading-relaxed max-w-xl">
+            We want to care for the most vulnerable among us. It&apos;s not just
+            about meeting local needs, but also building relationships with
+            those on the margins. See what God can do through you when you
+            choose to support and stand for those who are in need.
+          </p>
+          <a
+            href="#tally-open=wLpvNz&tally-layout=modal"
+            className="inline-block px-8 py-4 bg-white text-black font-bold text-sm uppercase tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-300"
+          >
+            SIGN ME UP!
+          </a>
+        </div>
+      </section>
+
+      {/* Back Navigation */}
+      <section className="w-full flex items-center justify-start px-4 py-8 md:px-8 lg:px-16 mb-8">
+        <a
+          href="/serve/ss"
+          className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors font-bold text-lg"
+        >
+          <div className="w-6 h-6 flex items-center justify-center">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+              className="fill-current"
+            >
+              <path d="M609.408 149.376L277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0a30.592 30.592 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.592 30.592 0 0 0 0-42.688a29.12 29.12 0 0 0-41.728 0" />
+            </svg>
+          </div>
+          <span>SS</span>
+        </a>
+      </section>
+      <Footer />
+    </main>
+  );
+}

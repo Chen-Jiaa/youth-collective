@@ -73,7 +73,7 @@ const NavSection = ({
   links: { href: string; label: string; external?: boolean }[];
 }) => (
   <div className="flex flex-col items-center gap-1">
-    <p className="text-lg font-bold mb-3">{title}</p>
+    <p className="font-heading text-lg mb-3">{title}</p>
     {links.map((link) => (
       <NavLink key={link.href} href={link.href} external={link.external}>
         {link.label}
@@ -91,7 +91,7 @@ export default function Navbar() {
       <div className="shrink-0">
         <Link
           href="/"
-          className="text-2xl md:text-3xl font-bold text-black no-underline tracking-tight"
+          className="text-2xl font-heading md:text-3xl text-black no-underline tracking-tight"
         >
           Strictly Students
         </Link>
@@ -104,7 +104,7 @@ export default function Navbar() {
             <NavigationMenu.Trigger className="bg-transparent inline-flex items-center justify-center rounded-md h-10 px-3 text-sm font-medium border-0 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400">
               <Menu className="w-6 h-6" />
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="absolute left-0 top-0 w-max">
+            <NavigationMenu.Content className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0">
               <nav className="flex gap-24 p-8">
                 <NavSection
                   title="Find Your Tribe"
@@ -121,8 +121,8 @@ export default function Navbar() {
           </NavigationMenu.Item>
         </NavigationMenu.List>
 
-        <div className="absolute top-full left-0 flex justify-center">
-          <NavigationMenu.Viewport className="relative bg-white shadow-lg rounded-md border border-slate-200 overflow-hidden" />
+        <div className="absolute top-full right-0 flex justify-end perspective-[2000px]">
+          <NavigationMenu.Viewport className="relative mt-2 origin-top-right bg-white shadow-lg rounded-md border border-slate-200 overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 h-(--radix-navigation-menu-viewport-height) transition-[width,height] duration-300" />
         </div>
       </NavigationMenu.Root>
 

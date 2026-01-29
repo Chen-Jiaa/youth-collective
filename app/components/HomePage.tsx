@@ -20,7 +20,7 @@ const TribeCard = ({
       href={href}
       className="flex flex-col items-center justify-center group"
     >
-      <p className="absolute z-10 text-white text-4xl font-bold drop-shadow-lg">
+      <p className="absolute z-10 text-white text-4xl font-heading drop-shadow-lg">
         {title}
       </p>
       <Image
@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row items-center justify-center gap-4 mx-auto my-12 max-w-7xl px-4">
         <div className="flex-1 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading leading-tight">
             A God-centered community that loves people relentlessly.
           </h1>
         </div>
@@ -92,12 +92,12 @@ export default function HomePage() {
             className="mx-auto mb-6"
           />
 
-          <p className="text-lg md:text-xl text-black mb-4">
+          <p className="text-lg md:text-xl text-white mb-4">
             An 8 week journey to explore life, faith, and meaning—no judgment,
             no pressure, just real conversations.
           </p>
 
-          <p className="font-bold text-black mb-6">
+          <p className="font-bold text-lime-400 mb-6">
             Sunday | 1pm - 3pm | Stage 8
           </p>
 

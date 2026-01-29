@@ -67,9 +67,6 @@ export default function Footer() {
           <Link href="/pray" className="no-underline hover:underline text-sm">
             Pray
           </Link>
-          <Link href="/serve" className="no-underline hover:underline text-sm">
-            Serve
-          </Link>
           <a
             href="https://give.collective.my/"
             target="_blank"
@@ -89,17 +86,17 @@ export default function Footer() {
           >
             SS
           </Link>
-          <Link
+          {/* <Link
             href="/serve/mission"
             className="no-underline hover:underline text-sm"
           >
             Mission
-          </Link>
+          </Link> */}
           <a
             href="https://collective.my/ministries/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white no-underline hover:underline text-sm"
+            className="no-underline hover:underline text-sm"
           >
             Church
           </a>
@@ -108,7 +105,7 @@ export default function Footer() {
         {/* Social Links */}
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg mb-2">Slide into our DMs</h3>
-          <div className="flex gap-4 mb-2">
+          <div className="flex items-center justify-center gap-4 mb-2">
             <a
               href="https://www.instagram.com/strictlystudents/"
               target="_blank"
