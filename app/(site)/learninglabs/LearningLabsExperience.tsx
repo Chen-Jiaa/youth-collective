@@ -45,7 +45,7 @@ export default function LearningLabsExperience() {
             <dl className="mt-8 grid w-full max-w-2xl grid-cols-2 gap-3 border-y-2 border-black py-4 text-base sm:gap-5 sm:text-lg md:grid-cols-3">
               <div>
                 <dt className="text-sm font-medium">Dates</dt>
-                <dd className="mt-1 font-bold">6–12 Dec 2026</dd>
+                <dd className="mt-1 font-bold">5–11 Dec 2026</dd>
               </div>
               <div>
                 <dt className="text-sm font-medium">Age</dt>
@@ -144,7 +144,7 @@ export default function LearningLabsExperience() {
           <div className="grid max-w-3xl gap-8 text-left">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-white/70">Dates</h3>
-              <p className="mt-2 text-2xl font-bold">Dec 6–12, 2026</p>
+              <p className="mt-2 text-2xl font-bold">Dec 5–11, 2026</p>
             </div>
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-white/70">Age</h3>
