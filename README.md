@@ -35,3 +35,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # youth-collective
+
+## Booking email
+
+Bookings, Waitlist joins and promotions, and member cancellations create a durable
+email delivery record in the same database transaction. Configure
+`MAILERSEND_API_KEY`, a MailerSend-verified `MAILERSEND_FROM_EMAIL`, and an
+optional `MAILERSEND_FROM_NAME` to send them.
+
+`/api/cron/session-reminders` is scheduled hourly through `vercel.json`. It creates
+the single reminder for each confirmed Booking 23–25 hours before the Session and
+retries queued or failed email deliveries. Set `CRON_SECRET`; scheduled calls must
+send `Authorization: Bearer <CRON_SECRET>`.
