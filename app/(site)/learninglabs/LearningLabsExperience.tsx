@@ -3,6 +3,7 @@ import FeatureCards from "./components/FeatureCards";
 import FAQ from "./components/FAQ";
 import HeroGallery from "./components/HeroGallery";
 import RegistrationDialog from "./components/RegistrationDialog";
+import StudentStoryVideo from "./components/StudentStoryVideo";
 
 /*
  * THESIS: The programme is introduced as a future memory wall—an accumulating record of the week teens will make together.
@@ -121,6 +122,12 @@ export default function LearningLabsExperience() {
           <div>
             <FeatureCards />
           </div>
+        </div>
+      </section>
+
+      <section aria-label="Learning Labs student story" className="bg-black px-3 py-12 text-black sm:px-5 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-[92rem]">
+          <StudentStoryVideo />
         </div>
       </section>
 
